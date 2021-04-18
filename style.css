@@ -64,7 +64,8 @@ header .barra-busqueda {
 
 header .barra-busqueda:hover {
     box-shadow: 0 1px 6px 0 aqua;;
-    border-color: aqua;
+    border-color: #a9a9a9;
+    cursor: pointer;
 }
 
 header .categorias {
@@ -82,4 +83,35 @@ header .categorias a {
 
 header .categorias a.activo {
     color: black;
+}
+
+/* GRID */
+
+.grid {
+    position: relative;
+    width: 100%;
+    opacity: 0;
+    transition: opacity 0.5s linear 1s;
+}
+
+.grid.imagenes-cargadas {
+    opacity: 1;
+}
+
+.grid .item {
+    position: absolute;
+    display: block;
+    padding: 0;
+    margin: 10px;
+    width: calc(33.3333% - 20px);
+}
+
+.grid .item-contenido {
+    position: relative;
+}
+
+.grid .item img {
+    width: 100%;
+    cursor: pointer;
+    vertical-align: top;
 }
