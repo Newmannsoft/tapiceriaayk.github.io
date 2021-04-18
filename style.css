@@ -5,16 +5,81 @@
 }
 
 body {
-    background: #f3f3f3;
+    background: white;
     font-family: 'Open Sans', sans-serif;
 }
 
 a {
     text-decoration: none;
 }
+body div .logo img {
+    width: 100%;
+    margin: 0 auto;
+    width: 240px;
+    display: flex;
+    justify-content: center;
 
+}
 .container {
     width: 90%;
     max-width: 800px;
     margin: auto;
+}
+
+/* HEADER */
+
+header {
+    padding: 40px 0;
+}
+
+header .logo {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+header .logo p {
+    color: black;
+}
+
+header form {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+header .barra-busqueda {
+    width: 70%;
+    height: 40px;
+    line-height: 40px;
+    background: white;
+    padding: 0 20px;
+    border-radius: 100px;
+    border: none;
+    outline: none;
+    text-align: center;
+    font-size: 16px;
+    border: 1px solid #a9a9a9;
+}
+
+header .barra-busqueda:hover {
+    box-shadow: 0 1px 6px 0 aqua;;
+    border-color: aqua;
+}
+
+header .categorias {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+header .categorias a {
+    color: #9b9b9b;
+    margin: 10px 20px;
+    font-size: 18px;
+    font-weight: 700;
+}
+
+header .categorias a.activo {
+    color: black;
 }
