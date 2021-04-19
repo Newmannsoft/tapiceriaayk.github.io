@@ -63,7 +63,7 @@ header .barra-busqueda {
 }
 
 header .barra-busqueda:hover {
-    box-shadow: 0 1px 6px 0 aqua;;
+    box-shadow: 0 1px 6px 0 #2da4c4;;
     border-color: #a9a9a9;
     cursor: pointer;
 }
@@ -82,7 +82,7 @@ header .categorias a {
 }
 
 header .categorias a.activo {
-    color: black;
+    color: #2da4c4;
 }
 
 /* GRID */
