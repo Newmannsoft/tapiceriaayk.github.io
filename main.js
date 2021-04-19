@@ -40,7 +40,19 @@ window.addEventListener('load', () => {
         elemento.addEventListener('click', () => {
             overlay.classList.add('activo');
             document.querySelector('#overlay img').src =ruta;
-        })
+        });
     });
+
+    /*Event boton cerrar */
+
+    document.querySelector('#btn-cerrar-popup').addEventListener('click', () => {
+        overlay.classList.remove('activo');
+    });
+
+    /*Event overlay cerrar */
+
+    overlay.addEventListener('click', (evento) => {
+        evento.target.id === 'overlay' ? overlay.classList.remove('activo') : '';
+    })
 });
 
