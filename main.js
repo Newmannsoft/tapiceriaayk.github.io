@@ -29,5 +29,18 @@ window.addEventListener('load', () => {
         const busqueda = evento.target.value;
         grid.filter( (item) => item.getElement().dataset.etiquetas.includes(busqueda));
     });
+
+    /*items for the images */
+
+    const overlay = document.getElementById('overlay');
+    document.querySelectorAll('.grid .item img').forEach((elemento) => {
+        const ruta = elemento.getAttribute('src');
+        const description = elemento.parentNode.parentNode.dataset.description;
+
+        elemento.addEventListener('click', () => {
+            overlay.classList.add('activo');
+            document.querySelector('#overlay img').src =ruta;
+        })
+    });
 });
 
