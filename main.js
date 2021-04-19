@@ -17,7 +17,7 @@ window.addEventListener('load', () => {
             /*Selector y conversor a minusculas */
             const categoria = evento.target.innerHTML.toLowerCase();
             /*Filtrado */
-            grid.filter('[data-categoria="categoria"]');
+            categoria === 'todos' ? grid.filter('[data-categoria]') : grid.filter(`[data-categoria="${categoria}"]`);
         });
     });
 });
