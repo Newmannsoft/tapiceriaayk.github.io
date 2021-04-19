@@ -7,7 +7,9 @@ const grid = new Muuri('.grid', {
 window.addEventListener('load', () => {
     grid.refreshItems().layout();
     document.getElementById('grid').classList.add('imagenes-cargadas');
+
     /*Selector */
+    /* listenier  */
     const enlaces = document.querySelectorAll('#categorias a');
     enlaces.forEach((elemento) => {
         elemento.addEventListener('click', (evento) => {
@@ -19,6 +21,13 @@ window.addEventListener('load', () => {
             /*Filtrado */
             categoria === 'todos' ? grid.filter('[data-categoria]') : grid.filter(`[data-categoria="${categoria}"]`);
         });
+    });
+
+    /* Filtrado de imagenes Barra de busqueda */
+
+    document.querySelector('#barra-busqueda').addEventListener('input', (evento) => {
+        const busqueda = evento.target.value;
+        grid.filter( (item) => item.getElement().dataset.etiquetas.includes(busqueda));
     });
 });
 
