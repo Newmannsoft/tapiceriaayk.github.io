@@ -117,6 +117,7 @@ header .categorias a.activo {
     position: relative;
     width: 100%;
     opacity: 0;
+    margin-bottom: 10px;
     transition: opacity 0.5s linear 1s;
 }
 
