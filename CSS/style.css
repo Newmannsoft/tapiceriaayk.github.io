@@ -57,11 +57,12 @@ header .icons i {
     align-items: center;
     justify-content: flex-end;
     margin-right: 50px;
-    font-family: 'Zen Dots', cursive;
 }
 
 .profile-link a {
     color: #2da4c4;
+    font-family: 'Raleway', bold;
+    font-size: 16px;
 }
 
 .profile-link  a:hover {
@@ -125,7 +126,10 @@ header .profile-link {
 }
 
 .logo p {
-    color: black;
+    color: #2da4c4;
+    font-family: 'Raleway', bold;
+    font-size: 35px;
+    margin-bottom: 15px;
 }
 form {
     width: 100%;
@@ -183,6 +187,8 @@ form {
 .categorias a.activo {
     color: #2da4c4;
 }
+
+
 
 /* GRID */
 

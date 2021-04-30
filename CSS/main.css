@@ -61,6 +61,7 @@ nav {
 }
 
 nav .nav-logo-container {
+    display: flex;
     margin-left: 50px;
 }
 
@@ -68,7 +69,17 @@ nav .nav-logo-container {
     width:  180px;
     height: 105px;
     display: flex;
-    align-items: center;
+}
+
+.nav-logo-container p{
+    color: #2da4c4;
+    font-family: 'Raleway', bold;
+    font-size: 35px;
+}
+
+.nav-logo-container p:hover {
+    cursor: pointer;
+    color: #00d9ff;
 }
 
 nav .profile-link {
@@ -76,11 +87,13 @@ nav .profile-link {
     align-items: center;
     justify-content: flex-end;
     margin-right: 50px;
-    font-family: 'Zen Dots', cursive;
+    
 }
 
 nav .profile-link a {
-    color: black;
+    color: #2da4c4;
+    font-family: 'Raleway', bold;
+    font-size: 16px;
 }
 
 nav .profile-link  a:hover {
@@ -158,32 +171,63 @@ nav .profile-link  a:hover {
 }
 
 .blogs-main-new {
-    font-family: 'Zen Dots', cursive;
     display: grid;
     grid-template-columns: 2fr 1fr;
     grid-template-rows: 2fr;
 }
 
-.carousel {
+.slider {
     grid-column: 1;
+    width: 100%;
+    overflow: hidden;
 }
 
-.blogs-news-img-container {
-   
+.slider ul {
+    display: flex;
+    padding: 0;
+    width: 400%;
+
+    animation: cambio 20s infinite alternate linear;
 }
 
-.blogs-news-img-container img {
-    width: 85%;
-    max-height: 480px;
+.slider li {
+    width: 100%;
+    margin: auto;
+    list-style: none;
+    margin-left: 25px;
 }
 
+.slider img {
+    width: 100%;
+    height: 480px;
+    margin-top: 25px;
+    border-radius: 25px;
+}
+
+@keyframes cambio {
+    0% {margin-left: 0;}
+    20% {margin-left: 0;}
+
+    25% {margin-left: -100%;}
+    45% {margin-left: -100%;}
+
+    50% {margin-left: -200%;}
+    70% {margin-left: -200%;}
+
+    75% {margin-left: -300%;}
+    100% {margin-left: -300%;}
+}
 .blogs-news-info-container {
     grid-column: 2;
+    padding-left: 40px;
     margin: auto 0;
 }
 
 .blogs-news-info-container h2 {
-    font-family: 'Zen Dots', cursive;
+    color: #2da4c4;
+    padding-top: 15px;
+    font-family: 'Raleway', bold;
+    font-size: 25px;
 }
 
 .blogs-news-info-container p {
@@ -216,8 +260,9 @@ nav .profile-link  a:hover {
 .blogs-button:hover {
     box-shadow: 0 1px 6px 0 #2da4c4;
     border-color: #2da4c4;
+    background: #00d9ff;
     cursor: pointer;
-    color: black;
+    color: white;
 }
 
 .blogs-posts-container .post-container {
@@ -297,6 +342,9 @@ footer p .autor:hover {
     font-family: 'Raleway', bold;
     padding-right: 35px;
     margin: 0 15px;
+}
+.blogpost-main-container h3:hover {
+    color: #00d9ff;
 }
 
 .blogpost-main-container p {
