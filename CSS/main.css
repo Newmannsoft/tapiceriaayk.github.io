@@ -57,22 +57,21 @@ header .icons i {
 
 nav {
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1fr  1fr 1fr;
+    height: 80px;
 }
 
 nav .nav-logo-container {
+    height: 80px;
     display: flex;
-    margin-left: 50px;
-}
-
-.nav-logo-container img {
-    width:  180px;
-    height: 105px;
-    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .nav-logo-container p{
     color: #2da4c4;
+    grid-row: 1;
+    margin: 25px 50px;
     font-family: 'Raleway', bold;
     font-size: 35px;
 }
@@ -82,18 +81,34 @@ nav .nav-logo-container {
     color: #00d9ff;
 }
 
+.nav-logo-container img {
+    grid-row: 2;
+    width: 160px;
+    height: 100px;
+}
+
 nav .profile-link {
-    display: flex;
-    align-items: center;
-    justify-content: flex-end;
-    margin-right: 50px;
+    height: 80px;
     
 }
 
-nav .profile-link a {
+nav .nosotros a {
     color: #2da4c4;
     font-family: 'Raleway', bold;
     font-size: 16px;
+    padding-right: 50px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    margin-top: 15px;
+}
+
+nav .profile-link {
+    margin: 0 auto;
+}
+
+nav .profile-link img {
+    height: 90px;
 }
 
 nav .profile-link  a:hover {
@@ -376,7 +391,8 @@ footer p .autor:hover {
 }
 
 .profile-main-container .profile-container  h2 {
-    font-family: 'Raleway', bold;
+    font-family: 'Raleway', sans-serif;
+    color: #2da4c4 ;
     padding-bottom: 20px;
     border-bottom: solid 1px #2da4c4;
 }
@@ -390,29 +406,33 @@ footer p .autor:hover {
 }
 
 .profile-main-proyects h3 {
-    border-bottom: 1px solid #cdd2da;
+    border-bottom: 1px solid #2da4c4;
     padding-bottom: 35px;
+    margin-top: 100px;
     text-align: center;
-    font-family: 'Zen Dots', cursive;
+    color: #2da4c4;
+    font-family: 'Raleway', sans-serif;
+}
+
+.profile-main-proyects b {
+    color: #2da4c4;
 }
 
 .proyects-main-container {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
+    max-width: 900px;
+    margin: 0 auto;
 }
 
 .proyect-container {
     padding: 0 5px;
 }
 
-.proyect-container h4 {
-    font-family: 'Zen Dots', cursive;
-}
 
 .proyect-container p {
     font-family: 'Raleway', sans-serif;
     text-align: justify;
     padding-right: 15px;
+    margin-bottom: 60px;
 }
 
 .soy-dani {
