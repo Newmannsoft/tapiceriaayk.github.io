@@ -200,9 +200,9 @@ nav .profile-link  a:hover {
 .slider ul {
     display: flex;
     padding: 0;
-    width: 400%;
+    width: 800%;
 
-    animation: cambio 20s infinite alternate linear;
+    animation: cambio 40s infinite alternate linear;
 }
 
 .slider li {
@@ -221,16 +221,29 @@ nav .profile-link  a:hover {
 
 @keyframes cambio {
     0% {margin-left: 0;}
-    20% {margin-left: 0;}
+    8% {margin-left: 0;}
 
-    25% {margin-left: -100%;}
-    45% {margin-left: -100%;}
+    15% {margin-left: -100%;}
+    23% {margin-left: -100%;}
 
-    50% {margin-left: -200%;}
-    70% {margin-left: -200%;}
+    28% {margin-left: -200%;}
+    36% {margin-left: -200%;}
 
-    75% {margin-left: -300%;}
-    100% {margin-left: -300%;}
+    41% {margin-left: -300%;}
+    49% {margin-left: -300%;}
+
+    54% {margin-left: -400%;}
+    62% {margin-left: -400%;}
+
+    67% {margin-left: -500%;}
+    75% {margin-left: -500%;}
+
+    80% {margin-left: -600%;}
+    88% {margin-left: -600%;}
+
+    
+    92% {margin-left: -700%;}
+    100% {margin-left: -700%;}
 }
 .blogs-news-info-container {
     grid-column: 2;
@@ -268,7 +281,7 @@ nav .profile-link  a:hover {
 	background-color: #2da4c4;
     border-radius: 18px;
     padding: 10px 15px;
-    font-size: 12px;
+    font-size: 16px;
     font-family: 'Raleway', bold;
 }
 

@@ -244,6 +244,9 @@ form {
     display: flex;
 }
 
+.overlay.activo. {
+    opacity: 0%;
+}
 .contenedor-img {
     padding: 0;
     margin: 0;
