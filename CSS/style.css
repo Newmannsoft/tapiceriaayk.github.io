@@ -256,13 +256,21 @@ form {
 .overlay .description {
     display: block;
     background: white;
-    padding: 0px;
-    border: 0px;
+    justify-content: center;
     text-align: center;
     margin: 0 auto;
     border-radius: 10px;
-    max-width: 100px; max-height: 100px;
+    width: 280px;
+}
 
+.overlay .description:hover {
+    cursor: pointer;
+}
+
+.overlay .description p {
+    padding-bottom: 15px;
+    font-size: 20px;
+    color: #2da4c4;
 }
 
 .overlay .description img {
