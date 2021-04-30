@@ -2,9 +2,6 @@ body {
     margin: 0;
     padding: 0;   
 }
-main {
-    margin-bottom: 120px;
-}
 
 .home-body {
     position: fixed;
@@ -182,6 +179,7 @@ nav .profile-link  a:hover {
 
 .blogs-news-info-container {
     grid-column: 2;
+    margin: auto 0;
 }
 
 .blogs-news-info-container h2 {
