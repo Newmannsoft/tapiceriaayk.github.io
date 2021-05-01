@@ -65,7 +65,7 @@
 
 @media (min-width: 600px) {
     #grid .item {
-        width: calc(100% - 20px);
+        width: calc(50% - 20px);
     }
     
     .proyects-main-container {

@@ -204,7 +204,7 @@ form {
     opacity: 1;
 }
 
-.grid .item {
+#grid .item {
     position: absolute;
     display: block;
     padding: 0;
