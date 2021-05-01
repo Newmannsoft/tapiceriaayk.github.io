@@ -80,6 +80,7 @@
 
     header .back .back-button i {
         padding-bottom: 100px;
+        transform: scale(1.5);
         color: #2da4c4;
     }
 
