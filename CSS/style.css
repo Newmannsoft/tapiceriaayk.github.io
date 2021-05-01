@@ -347,9 +347,3 @@ footer p .autor:hover {
         width: 90%;
     }
 }
-
-@media (max-width: 480px) {
-    #grid .item {
-        width: calc(100% - 20px);
-    }
-}
