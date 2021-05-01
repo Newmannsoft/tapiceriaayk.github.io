@@ -1,0 +1,133 @@
+
+@media (max-width: 480px) {
+    #grid .item {
+        width: calc(100% - 20px);
+    }
+
+    header .header-icons-container {
+        display: flex;
+        justify-content: center;
+    }
+
+    header .header-icons-container .icons {
+        margin-right: 0;
+        width: 300px;
+    }
+
+    header .back .back-button i {
+        padding-bottom: 100px;
+        transform: scale(1.5);
+        color: #2da4c4;
+    }
+
+    header .back .back-button i:hover {
+        color: #2da4c4;
+        cursor: pointer;
+    }
+
+    header .profile-link {
+        display: flex;
+        justify-content: flex-end;
+        padding-bottom: 150px;
+        margin-right: 0;
+    }
+
+    header .back {
+        padding: 70px;
+    }
+
+    header .back .back-button {
+        justify-content: left;
+    }
+
+    .nav-logo-container p{
+        display:none !important;
+    }
+
+    nav {
+        display: flex;
+    }
+
+    nav .profile-link img {
+        height: 95px;
+        padding-right: 180px;
+    }
+
+    nav .nosotros a {
+        margin-top: 25px;
+        margin-right: 20px;
+    }
+
+    .slider img {
+        height: 80%;
+    }
+}
+
+@media (max-width: 600px) {
+    #grid .item {
+        width: calc(100% - 20px);
+    }
+
+    header .header-icons-container {
+        display: flex;
+        justify-content: center;
+    }
+
+    header .header-icons-container .icons {
+        margin-right: 0;
+        width: 300px;
+    }
+
+    header .back .back-button i {
+        padding-bottom: 100px;
+        transform: scale(1.5);
+        color: #2da4c4;
+    }
+
+    header .back .back-button i:hover {
+        color: #2da4c4;
+        cursor: pointer;
+    }
+
+    header .profile-link {
+        display: flex;
+        justify-content: flex-end;
+        padding-bottom: 150px;
+        margin-right: 0;
+    }
+
+    header .back {
+        padding: 70px;
+    }
+
+    header .back .back-button {
+        justify-content: left;
+    }
+
+    .nav-logo-container p{
+        display:none !important;
+    }
+
+    nav {
+        display: flex;
+    }
+
+    nav .profile-link img {
+        padding-right: 300px;
+    }
+
+    nav .nosotros a {
+        margin-top: 25px;
+        margin-right: 20px;
+    }
+    nav .nosotros a .none {
+        display:none !important;
+    }
+
+    footer {
+        height: 100px;
+    }
+
+}
+
+
