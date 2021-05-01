@@ -1,5 +1,5 @@
 
-@media (max-width: 481px) {
+@media (max-width: 480px) {
     #grid .item {
         width: calc(100% - 20px);
     }
